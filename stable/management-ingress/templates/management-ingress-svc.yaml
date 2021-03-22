@@ -28,7 +28,7 @@ spec:
     - name: oauth
       port: 443
       targetPort: {{ .Values.oauth_proxy.httpsPort }}
-    - name: management-ingress
+    - name: ingress
       port: {{ .Values.httpsPort }}
       targetPort: {{ .Values.httpsPort }}
   selector:
